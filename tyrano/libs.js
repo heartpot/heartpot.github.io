@@ -309,7 +309,6 @@
         
         */
         
-        // Error message title
         $.ajax({
             url: file_path + "?" + Math.floor(Math.random() * 1000000),
             cache: false,

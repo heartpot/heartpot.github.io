@@ -6,11 +6,11 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
-[bg  storage="title.jpg"  ]
+[bg  storage="opening_scene.jpg"  ]
 *title
 
-[glink  color="blue"  text="New&nbsp;Game"  x="300"  y="700"  size="30"  target="*start"  width="undefined"  height="undefined"  _clickable_img="undefined"  ]
-[glink  color="blue"  text="Load&nbsp;Game"  x="700"  y="700"  size="30"  target="*load"  ]
+[glink  color="blue"  text="New&nbsp;Game"  x="324"  y="660"  size="30"  target="*start"  width="undefined"  height="undefined"  _clickable_img=""  ]
+[glink  color="blue"  text="Load&nbsp;Game"  x="676"  y="660"  size="30"  target="*load"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *start
 
@@ -18,7 +18,7 @@
 
 [cm  ]
 [tb_keyconfig  flag="1"  ]
-[jump  storage="scene1.ks"  target=""  ]
+[jump  storage="namescene.ks"  target=""  ]
 [s  ]
 *load
 
