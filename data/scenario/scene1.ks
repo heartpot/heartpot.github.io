@@ -5,23 +5,25 @@
 [wait  time="3000"  ]
 [quake  time="300"  count="5"  hmax="10"  wait="true"  ]
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
-Bạn thức dậy trên giường, trong một cái hang. Đầu bạn choáng váng. Bạn kiểm tra thân thể của mình...[p]
+Bạn thức dậy trên giường, trong một cái hang. [p]
+Đầu bạn choáng váng. Bạn kiểm tra thân thể của mình...[p]
 Vẫn xinh đẹp và khỏe mạnh như thường![p]
-Bạn dần nhớ ra rằng mình đã đi du lịch cùng bạn bè trên biển... Nhưng một cơn bão đã xảy ra và bạn bị cuốn xuống đáy biển.[p]
+Bạn dần nhớ ra rằng mình đã đi du lịch cùng bạn bè trên biển... [p]
+Nhưng một cơn bão đã xảy ra và bạn bị cuốn xuống đáy biển.[p]
 "Mình đã có một giấc mơ kì lạ, không biết mình đã thật sự tỉnh giấc hay chưa...?" - Bạn thầm nghĩ.[p]
 #
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Mọi&nbsp;người&nbsp;đâu&nbsp;cả&nbsp;rồi?"  x="442"  y="622"  target="*label2"  width=""  height=""  _clickable_img=""  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  target="*label1"  text="Tôi&nbsp;đang&nbsp;ở&nbsp;đâu&nbsp;đây?"  x="453"  y="707"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Mọi&nbsp;người&nbsp;đâu&nbsp;cả&nbsp;rồi?"  x="367"  y="507"  target="*label2"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  target="*label1"  text="Tôi&nbsp;đang&nbsp;ở&nbsp;đâu&nbsp;đây?"  x="383"  y="340"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *label1
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="35"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 Bạn cảm thấy lo sợ cho bản thân mình... [p]
 Liệu bạn sẽ chết ở đây? Còn những cuộc hẹn quan trọng, tương lai ở phía trước...[p]
@@ -38,7 +40,7 @@ Trong thời khắc nguy kịch, kẻ đáng trọng sẽ nghĩ đến người 
 *label2
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 Bạn cảm thấy lo lắng khi bạn bè của mình đều biệt tăm. Không biết họ có an toàn hay không... [p]
 Khi bạn đang loay hoay tìm cách ra khỏi đây thì...[p]
@@ -59,7 +61,7 @@ Kẻ nhân nghĩa ắt làm nên việc lớn.[p]
 [chara_show  name="Shark"  time="2000"  wait="true"  left="381"  top="21"  width="528"  height="816"  reflect="false"  storage="chara/1/Sharkman_normal.png"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 #???
 Con người, chớ mà sợ hãi. Ta đến với thiện chí. [p]
@@ -73,13 +75,13 @@ Dường như đã từng chạm mặt.[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Anh&nbsp;là…&nbsp;người&nbsp;đã&nbsp;cứu&nbsp;tôi?"  x="401"  y="618"  target="*label3"  width=""  height=""  _clickable_img=""  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Á~&nbsp;Có&nbsp;yêu&nbsp;quái!!!"  x="472"  y="704"  target="*label4"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Anh&nbsp;là…&nbsp;người&nbsp;đã&nbsp;cứu&nbsp;tôi?"  x="331"  y="321"  target="*label3"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Á~&nbsp;Có&nbsp;yêu&nbsp;quái!!!"  x="422"  y="452"  target="*label4"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *label3
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/Sharkman_pleased.png"  ]
 [tb_start_text mode=1 ]
 #???
@@ -89,13 +91,13 @@ Nếu còn gì bất tiện, đừng khách sáo.[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Hãy&nbsp;tìm&nbsp;bạn&nbsp;bè&nbsp;của&nbsp;tôi!"  x="414"  y="619"  width=""  height=""  _clickable_img=""  target="*label5"  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Hãy&nbsp;cho&nbsp;tôi&nbsp;về&nbsp;nhà&nbsp;ngay!"  x="402"  y="707"  width=""  height=""  _clickable_img=""  target="*label7"  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Hãy&nbsp;tìm&nbsp;bạn&nbsp;bè&nbsp;của&nbsp;tôi!"  x="343"  y="335"  width=""  height=""  _clickable_img=""  target="*label5"  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Hãy&nbsp;cho&nbsp;tôi&nbsp;về&nbsp;nhà&nbsp;ngay!"  x="327"  y="474"  width=""  height=""  _clickable_img=""  target="*label7"  ]
 [s  ]
 *label5
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/Sharkman_normal.png"  ]
 [tb_start_text mode=1 ]
 #???
@@ -104,13 +106,13 @@ Các đồng đội của ngươi đều ổn cả. Họ đã an toàn trở v�
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Tôi&nbsp;cũng&nbsp;muốn&nbsp;về&nbsp;nhà!"  target="*label7"  x="416"  y="627"  width=""  height=""  _clickable_img=""  ]
-[glink  color="blue"  storage="scene1.ks"  size="30"  text="Chỉ&nbsp;mình&nbsp;tôi&nbsp;là&nbsp;người&nbsp;được&nbsp;chọn?"  target="*label6"  x="348"  y="711"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Tôi&nbsp;cũng&nbsp;muốn&nbsp;về&nbsp;nhà!"  target="*label7"  x="364"  y="358"  width=""  height=""  _clickable_img=""  ]
+[glink  color="blue"  storage="scene1.ks"  size="40"  text="Chỉ&nbsp;mình&nbsp;tôi&nbsp;là&nbsp;người&nbsp;được&nbsp;chọn?"  target="*label6"  x="269"  y="509"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *label6
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/sharman_happy.png"  ]
 [tb_start_text mode=1 ]
 #???
@@ -142,7 +144,7 @@ Bây giờ hãy theo ta đi diện kiến Người.[p]
 [bg  time="1000"  method="crossfade"  storage="special/1.jpg"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 #Sa Tướng Quân
 Đừng nghĩ ngợi gì cả. Ta sẽ bảo vệ ngươi.[p]
@@ -157,7 +159,7 @@ Nào, đến đây.[p]
 *label7
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/Sharkman_bow.png"  ]
 [tb_start_text mode=1 ]
 #???
@@ -181,7 +183,7 @@ Nhưng ta thì chẳng có chút hy vọng nào.[p]
 *label4
 
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/Sharkman_angry.png"  ]
 [tb_start_text mode=1 ]
 #???
@@ -204,9 +206,9 @@ Bạn chìm vào giấc ngủ và mơ thấy mình trôi nổi giữa đại dư
 [bg  time="1000"  method="crossfade"  storage="background/sand.jpg"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
-[font  size="30"  color="0xffffff"  face="Arial"  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
-Bạn tỉnh dậy trên một bãi biển. Xung quanh là bạn bè của mình. Họ rất vui vì bạn đã ổn.[p]
+Bạn tỉnh dậy trên một bãi biển. Xung quanh là bạn bè của mình. [p]
 Không biết mọi chuyện sẽ ra sao nếu bạn đã chọn khác đi.[p]
 [_tb_end_text]
 

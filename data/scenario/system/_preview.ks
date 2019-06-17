@@ -1,3 +1,3 @@
-[preload  storage="./data/fgimage/chara/1/Sharkman_surprised.png"  ]
-[preload  storage="./data/fgimage/chara/1/Sharkman_bow.png"  ]
+[preload  storage="./data/bgimage/hearpot-animate.gif"  ]
+[preload  storage="./data/bgimage/opening_scene.jpg"  ]
 [return] 

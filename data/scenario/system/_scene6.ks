@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/background/scholar_cave.jpg"  ]
+[preload  storage="./data/bgimage/background/seashell_room.jpg"  ]
+[preload  storage="./data/fgimage/chara/1/Sharkman_normal.png"  ]
+[preload  storage="./data/fgimage/chara/1/Sharkman_angry.png"  ]
+[preload  storage="./data/bgimage/bg_base.png"  ]
+[return]
