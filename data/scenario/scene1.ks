@@ -1,7 +1,9 @@
 [_tb_system_call storage=system/_scene1.ks]
 
 [cm  ]
-[bg  storage="background/bedroom.jpg"  time="1000"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="48412__luftrum__oceanwavescrushing.ogg"  ]
+[bg  time="5000"  method="crossfade"  storage="background/bedroom.jpg"  ]
 [wait  time="3000"  ]
 [quake  time="300"  count="5"  hmax="10"  wait="true"  ]
 [tb_show_message_window  ]
@@ -12,7 +14,6 @@ Bạn thức dậy trên giường, trong một cái hang. [p]
 Vẫn xinh đẹp và khỏe mạnh như thường![p]
 Bạn dần nhớ ra rằng mình đã đi du lịch cùng bạn bè trên biển... [p]
 Nhưng một cơn bão đã xảy ra và bạn bị cuốn xuống đáy biển.[p]
-"Mình đã có một giấc mơ kì lạ, không biết mình đã thật sự tỉnh giấc hay chưa...?" - Bạn thầm nghĩ.[p]
 #
 [_tb_end_text]
 
@@ -57,8 +58,10 @@ Kẻ nhân nghĩa ắt làm nên việc lớn.[p]
 [jump  storage="scene1.ks"  target="*next2"  ]
 *next2
 
+[stopbgm  time="1000"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [chara_show  name="Shark"  time="2000"  wait="true"  left="381"  top="21"  width="528"  height="816"  reflect="false"  storage="chara/1/Sharkman_normal.png"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  fadein="true"  storage="music.ogg"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -141,7 +144,7 @@ Bây giờ hãy theo ta đi diện kiến Người.[p]
 
 [tb_hide_message_window  ]
 [chara_hide  name="Shark"  time="1000"  wait="true"  pos_mode="true"  ]
-[bg  time="1000"  method="crossfade"  storage="special/1.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="special/11.jpg"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -182,6 +185,7 @@ Nhưng ta thì chẳng có chút hy vọng nào.[p]
 [s  ]
 *label4
 
+[stopbgm  time="1000"  fadeout="true"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
 [chara_mod  name="Shark"  time="600"  cross="true"  storage="chara/1/Sharkman_angry.png"  ]
@@ -196,6 +200,8 @@ Xàm ngôn! Hãy quay trở về thế giới của nhà ngươi![p]
 [s  ]
 *next1
 
+[stopbgm  time="1000"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="48412__luftrum__oceanwavescrushing.ogg"  fadein="true"  ]
 [quake  time="300"  count="10"  hmax="10"  wait="true"  ]
 [tb_start_text mode=1 ]
 Bạn chìm vào giấc ngủ và mơ thấy mình trôi nổi giữa đại dương.[p]
@@ -214,5 +220,5 @@ Không biết mọi chuyện sẽ ra sao nếu bạn đã chọn khác đi.[p]
 
 [tb_hide_message_window  ]
 [wait  time="3000"  ]
-[jump  storage="title_screen.ks"  target=""  ]
+[jump  storage="title_screen.ks"  target="*title"  ]
 [s  ]

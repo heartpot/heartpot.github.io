@@ -2,34 +2,182 @@
 
 [mask time=10]
 [mask_off time=10]
-[hidemenubutton]
+[cm  ]
+[stopbgm  time="1000"  fadeout="true"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Calamity.ogg"  ]
+[bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Sinh vật phàm trần kia... Tên của ngươi là gì?[p]
+[_tb_end_text]
 
-[tb_clear_images]
+[edit  left="488"  top="647"  width="300"  height="50"  size="35"  maxchars="200"  name="f.name"  reflect="false"  ]
+[button  storage="namescene.ks"  target="*Begin"  graphic="button/save2.png"  width="120"  height="43"  x="861"  y="647"  _clickable_img=""  name="img_8"  ]
+[s  ]
+*Begin
 
-[tb_keyconfig  flag="0"  ]
+[commit  ]
+[cm  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_tyrano_code]
+#Bạn
+Tên tôi là  [emb exp="f.name"].[p]
+#
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#Giọng nói huyền bí
+Tốt lắm [emb exp="f.name"], ngươi có muốn nghe ta kể chuyện không?[p]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
+(Chọn không nếu bạn đã xem phần giới thiệu.)[p]
+[_tb_end_text]
+
 [tb_hide_message_window  ]
-[bg  storage="hearpot-animate.gif"  method="fadeInDown"  time="3000"  ]
-[wait  time="9000"  ]
-[jump  storage="title_screen.ks"  target="*title"  ]
+[glink  color="blue"  storage="namescene.ks"  size="40"  text="Có"  x="513"  y="359"  width=""  height=""  _clickable_img=""  target="*Co"  ]
+[glink  color="blue"  storage="namescene.ks"  size="40"  text="Không"  x="479"  y="527"  width=""  height=""  _clickable_img=""  target="*Khong"  ]
 [s  ]
-*title
+*Khong
 
-[bg  time="1000"  method="crossfade"  storage="opening_scene.jpg"  ]
-[glink  color="blue"  text="New&nbsp;Game"  x="324"  y="660"  size="30"  target="*start"  width="undefined"  height="undefined"  _clickable_img=""  ]
-[glink  color="blue"  text="Load&nbsp;Game"  x="676"  y="660"  size="30"  target="*load"  width=""  height=""  _clickable_img=""  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Cuối cùng thì người đặc biệt cũng đã xuất hiện... Hãy thức dậy và bắt đầu cuộc hành trình.[p]
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[wait  time="3000"  ]
+[jump  storage="scene1.ks"  target=""  ]
 [s  ]
-*start
+*Co
 
-[showmenubutton]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Để hiểu được chuyện gì sẽ xảy ra với nhà ngươi...[p]
+Hãy cùng ta quay trở về quá khứ gần 3000 năm trước...[p]
+#
+[_tb_end_text]
 
-[cm  ]
-[tb_keyconfig  flag="1"  ]
-[jump  storage="namescene.ks"  target=""  ]
+[tb_hide_message_window  ]
+[bg  time="3500"  method="fadeInRight"  storage="00.jpg"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Chắc hẳn ngươi đã biết truyền thuyết về dòng dõi "Con rồng cháu tiên" của người Việt. [p]
+Lạc Long Quân trị vì đất Nam lấy nàng Âu Cơ công chúa phương Bắc.[p]
+Âu Cơ sinh được một bọc trứng. Trứng nở thành 100 người con trai khôi ngô tuấn tú.[p]
+#
+[_tb_end_text]
+
+[bgmovie  time="1000"  volume="100"  loop="false"  storage="sea_2_(1).webm"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Tuy nhiên, Lạc Long Quân vốn mang dòng máu Long Vương nên không ở lâu trên mặt đất mà thường quay về Thủy Quốc.[p]
+Chàng bỏ lại Âu Cơ và đàn con khiến nàng phiền muộn, con cái nhớ thương.[p]
+#
+[_tb_end_text]
+
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Và rồi, Lạc Long Quân đến đem 50 người con xuống nước cai quản Thủy quốc Đông Hải.[p]
+50 người còn lại theo Âu Cơ lập nên nước Văn Lang. [p]
+Người con cả lên làm vua lấy hiệu Hùng Vương, mà người trần các ngươi vẫn gọi là Vua Hùng.[p]
+#
+[_tb_end_text]
+
+[wait_bgmovie  ]
+[stop_bgmovie  time="1000"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Thuở ban đầu, người trên bờ người dưới nước khó hòa thuận nhưng không phiền hà gì nhau. [p]
+Người chốn thủy phủ học tài phép của Lạc Long Quân nên chẳng phải nhờ cậy người phàm trần trên cạn.[p]
+#
+[_tb_end_text]
+
+[bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
+[tb_hide_message_window  ]
+[tb_image_show  time="1000"  storage="default/gif-1.gif"  width="1276"  height="840"  x=""  y=""  _clickable_img=""  name="img_47"  ]
+[wait  time="3000"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Người thường vốn thích mở cõi, sinh sôi nảy nở không ngừng. [p]
+Các ngươi tuy không có phép thần thông nhưng lại sáng dạ, có thể tự mình chế ngự tự nhiên. [p]
+Chúng ta cùng chia sẻ, hưởng lợi từ biển cả.[p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[tb_image_show  time="1000"  storage="default/2.gif"  width="1276"  height="840"  name="img_53"  ]
+[wait  time="3000"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Qua ngàn năm, người phàm trần đã quên đi mất lẽ sống hòa hợp với tự nhiên và làm nhiều điều càn quấy.[p]
+Không những làm cạn kiệt tài nguyên xứ mình, còn làm ô nhiễm miền biển. [p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[tb_image_hide  time="1000"  ]
+[tb_image_show  time="1000"  storage="default/turtle.jpg"  width="1276"  height="840"  name="img_57"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Khiến nhiều chúng sinh vô tội chịu cảnh thống khổ.[p]
+Thủy quốc vì thế cũng không được yên ổn mà lâm vào cảnh loạn lạc... [p]
+#
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[tb_image_show  time="1000"  storage="default/55.jpg"  width="1276"  height="840"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Nhiều kẻ không thể nguôi đi sự oán hờn với đồng bào trên cạn. [p]
+Chúng luôn tìm cách để thay đổi trật tự. Dẹp tan sự thống trị của loài người trên cạn.[p]
+#
+[_tb_end_text]
+
+[tb_image_hide  time="1000"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Phải chăng... Ngươi chính là người được chọn...[p]
+...Người có thể ngăn chặn sự diệt vong của nhân loại?[p]
+#
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+#Giọng nói huyền bí
+Hỡi [emb exp="f.name"] đến từ đất nước trên cạn, ngươi có muốn cùng ta thay đổi thế giới?[p]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[glink  color="blue"  storage="namescene.ks"  size="40"  text="Có"  x="510"  y="324"  width=""  height=""  _clickable_img=""  target="*Khong"  ]
+[glink  color="blue"  storage="namescene.ks"  size="40"  text="Không"  x="478"  y="488"  width=""  height=""  _clickable_img=""  target="*khong2"  ]
 [s  ]
-*load
+*khong2
 
-[cm  ]
-[showload]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
+[tb_start_text mode=1 ]
+#Giọng nói huyền bí
+Hãy quay trở lại tìm ta khi ngươi thay đổi lựa chọn.[p]
+Ta tin rằng ngươi chính là người đặc biệt mà chúng ta tìm kiếm bấy lâu nay.[p]
+#
+[_tb_end_text]
 
-[jump  target="*title"  storage=""  ]
+[jump  storage="title_screen.ks"  target=""  ]
 [s  ]

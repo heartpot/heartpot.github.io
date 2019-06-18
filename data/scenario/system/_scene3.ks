@@ -1,5 +1,5 @@
 [preload  storage="./data/bgimage/background/throne_room.jpg"  ]
-[preload  storage="./data/fgimage/default/2.jpg"  ]
+[preload  storage="./data/fgimage/default/22.jpg"  ]
 [preload  storage="./data/fgimage/chara/1/sharman_happy.png"  ]
 [preload  storage="./data/fgimage/chara/2/prince_happy.png"  ]
 [preload  storage="./data/fgimage/chara/2/prince_pleased.png"  ]

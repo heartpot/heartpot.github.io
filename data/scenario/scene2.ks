@@ -1,7 +1,9 @@
 [_tb_system_call storage=system/_scene2.ks]
 
 [cm  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [tb_hide_message_window  ]
+[playbgm  volume="100"  time="1000"  loop="true"  fadein="true"  storage="365659__hisoul__dive-deep-preview.ogg"  ]
 [tb_image_hide  time="1000"  ]
 [bg  time="1000"  method="crossfade"  storage="background/city.jpg"  ]
 [wait  time="3000"  ]
@@ -33,8 +35,8 @@ Hãy thận trọng.[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene2.ks"  size="40"  text="Tôi&nbsp;cảm&nbsp;thấy&nbsp;an&nbsp;toàn&nbsp;khi&nbsp;có&nbsp;anh&nbsp;ở&nbsp;bên."  x="219"  y="269"  width=""  height=""  _clickable_img=""  target="*Label_1"  ]
-[glink  color="blue"  storage="scene2.ks"  size="40"  text="Tôi&nbsp;cảm&nbsp;thấy&nbsp;sợ&nbsp;lắm."  x="389"  y="448"  width=""  height=""  _clickable_img=""  target="*Label_2"  ]
+[glink  color="blue"  storage="scene2.ks"  size="40"  text="Tôi&nbsp;cảm&nbsp;thấy&nbsp;an&nbsp;toàn&nbsp;khi&nbsp;có&nbsp;anh&nbsp;ở&nbsp;bên."  x="220"  y="370"  width=""  height=""  _clickable_img=""  target="*Label_1"  ]
+[glink  color="blue"  storage="scene2.ks"  size="40"  text="Tôi&nbsp;cảm&nbsp;thấy&nbsp;sợ&nbsp;lắm."  x="402"  y="523"  width=""  height=""  _clickable_img=""  target="*Label_2"  ]
 [s  ]
 *Label_1
 

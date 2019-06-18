@@ -1,7 +1,9 @@
 [_tb_system_call storage=system/_scene4.ks]
 
 [cm  ]
-[bg  time="8000"  method="crossfade"  storage="special/3.jpg"  ]
+[stopbgm  time="1000"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Otome90.ogg"  fadein="true"  ]
+[bg  time="8000"  method="crossfade"  storage="special/33.jpg"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]

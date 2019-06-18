@@ -1,6 +1,8 @@
 [_tb_system_call storage=system/_namescene.ks]
 
 [cm  ]
+[stopbgm  time="1000"  fadeout="true"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Calamity.ogg"  ]
 [bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -10,7 +12,7 @@ Sinh vật phàm trần kia... Tên của ngươi là gì?[p]
 [_tb_end_text]
 
 [edit  left="488"  top="647"  width="300"  height="50"  size="35"  maxchars="200"  name="f.name"  reflect="false"  ]
-[button  storage="namescene.ks"  target="*Begin"  graphic="button/save2.png"  width="120"  height="43"  x="861"  y="647"  _clickable_img=""  name="img_6"  ]
+[button  storage="namescene.ks"  target="*Begin"  graphic="button/save2.png"  width="120"  height="43"  x="861"  y="647"  _clickable_img=""  name="img_8"  ]
 [s  ]
 *Begin
 
@@ -26,8 +28,12 @@ Tên tôi là  [emb exp="f.name"].[p]
 
 [tb_start_tyrano_code]
 #Giọng nói huyền bí
-Tốt lắm [emb exp="f.name"], ngươi có cần ta giúp đỡ?[p]
+Tốt lắm [emb exp="f.name"], ngươi có muốn nghe ta kể chuyện không?[p]
 [_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
+(Chọn không nếu bạn đã xem phần giới thiệu.)[p]
+[_tb_end_text]
 
 [tb_hide_message_window  ]
 [glink  color="blue"  storage="namescene.ks"  size="40"  text="Có"  x="513"  y="359"  width=""  height=""  _clickable_img=""  target="*Co"  ]
@@ -39,7 +45,7 @@ Tốt lắm [emb exp="f.name"], ngươi có cần ta giúp đỡ?[p]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 #Giọng nói huyền bí
-Tốt lắm... Hãy thức dậy và bắt đầu cuộc hành trình...[p]
+Cuối cùng thì người đặc biệt cũng đã xuất hiện... Hãy thức dậy và bắt đầu cuộc hành trình.[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -58,7 +64,7 @@ Hãy cùng ta quay trở về quá khứ gần 3000 năm trước...[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="3500"  method="fadeInRight"  storage="2.jpg"  ]
+[bg  time="3500"  method="fadeInRight"  storage="00.jpg"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
@@ -86,7 +92,7 @@ Người con cả lên làm vua lấy hiệu Hùng Vương, mà người trần 
 [_tb_end_text]
 
 [wait_bgmovie  ]
-[bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
+[stop_bgmovie  time="1000"  ]
 [tb_start_text mode=1 ]
 #Giọng nói huyền bí
 Thuở ban đầu, người trên bờ người dưới nước khó hòa thuận nhưng không phiền hà gì nhau. [p]
@@ -94,8 +100,9 @@ Người chốn thủy phủ học tài phép của Lạc Long Quân nên chẳn
 #
 [_tb_end_text]
 
+[bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
 [tb_hide_message_window  ]
-[tb_image_show  time="1000"  storage="default/gif-1.gif"  width="1276"  height="840"  x=""  y=""  _clickable_img=""  name="img_43"  ]
+[tb_image_show  time="1000"  storage="default/gif-1.gif"  width="1276"  height="840"  x=""  y=""  _clickable_img=""  name="img_47"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -108,7 +115,7 @@ Chúng ta cùng chia sẻ, hưởng lợi từ biển cả.[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[tb_image_show  time="1000"  storage="default/2.gif"  width="1276"  height="840"  name="img_49"  ]
+[tb_image_show  time="1000"  storage="default/2.gif"  width="1276"  height="840"  name="img_53"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -119,8 +126,11 @@ Không những làm cạn kiệt tài nguyên xứ mình, còn làm ô nhiễm m
 #
 [_tb_end_text]
 
+[tb_hide_message_window  ]
 [tb_image_hide  time="1000"  ]
-[tb_image_show  time="1000"  storage="default/turtle.jpg"  width="1276"  height="840"  name="img_55"  ]
+[tb_image_show  time="1000"  storage="default/turtle.jpg"  width="1276"  height="840"  name="img_57"  ]
+[tb_show_message_window  ]
+[font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 #Giọng nói huyền bí
 Khiến nhiều chúng sinh vô tội chịu cảnh thống khổ.[p]
@@ -128,15 +138,14 @@ Thủy quốc vì thế cũng không được yên ổn mà lâm vào cảnh lo�
 #
 [_tb_end_text]
 
-[tb_image_hide  time="1000"  ]
 [tb_hide_message_window  ]
-[tb_image_show  time="1000"  storage="default/5.jpg"  width="1273"  height="838"  x="-3"  y="0"  _clickable_img=""  name="img_59"  ]
+[tb_image_show  time="1000"  storage="default/55.jpg"  width="1276"  height="840"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
 [tb_start_text mode=1 ]
 #Giọng nói huyền bí
 Nhiều kẻ không thể nguôi đi sự oán hờn với đồng bào trên cạn. [p]
-Không lâu nữa đâu... Họ sẽ rời khỏi đáy biển và lật đổ sự thống trị của người phàm trần các ngươi.[p]
+Chúng luôn tìm cách để thay đổi trật tự. Dẹp tan sự thống trị của loài người trên cạn.[p]
 #
 [_tb_end_text]
 
@@ -144,6 +153,7 @@ Không lâu nữa đâu... Họ sẽ rời khỏi đáy biển và lật đổ s
 [tb_start_text mode=1 ]
 #Giọng nói huyền bí
 Phải chăng... Ngươi chính là người được chọn...[p]
+...Người có thể ngăn chặn sự diệt vong của nhân loại?[p]
 #
 [_tb_end_text]
 
@@ -153,7 +163,7 @@ Hỡi [emb exp="f.name"] đến từ đất nước trên cạn, ngươi có mu�
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="namescene.ks"  size="40"  text="Có"  x="510"  y="324"  width=""  height=""  _clickable_img=""  target="*co2"  ]
+[glink  color="blue"  storage="namescene.ks"  size="40"  text="Có"  x="510"  y="324"  width=""  height=""  _clickable_img=""  target="*Khong"  ]
 [glink  color="blue"  storage="namescene.ks"  size="40"  text="Không"  x="478"  y="488"  width=""  height=""  _clickable_img=""  target="*khong2"  ]
 [s  ]
 *khong2
@@ -168,16 +178,4 @@ Ta tin rằng ngươi chính là người đặc biệt mà chúng ta tìm kiế
 [_tb_end_text]
 
 [jump  storage="title_screen.ks"  target=""  ]
-[s  ]
-*co2
-
-[tb_show_message_window  ]
-[font  size="40"  color="0xffffff"  face="Arial"  ]
-[tb_start_text mode=1 ]
-#Giọng nói huyền bí
-Cuối cùng thì người đặc biệt cũng xuất hiện rồi...[p]
-#
-[_tb_end_text]
-
-[jump  storage="namescene.ks"  target="*Khong"  ]
 [s  ]

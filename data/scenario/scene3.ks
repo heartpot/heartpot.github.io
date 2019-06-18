@@ -1,7 +1,9 @@
 [_tb_system_call storage=system/_scene3.ks]
 
 [cm  ]
+[stopbgm  time="1000"  ]
 [bg  time="1000"  method="crossfade"  storage="background/throne_room.jpg"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Calamity.ogg"  fadein="false"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -13,7 +15,7 @@ Một chàng trai trẻ với chiếc đuôi xanh biếc đang ngự trên ngai 
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[tb_image_show  time="1000"  storage="default/2.jpg"  width="1275"  height="839"  x="-2"  y="0"  _clickable_img=""  name="img_7"  ]
+[tb_image_show  time="1000"  storage="default/22.jpg"  width="1276"  height="840"  x="-2"  y="0"  _clickable_img=""  name="img_9"  ]
 [wait  time="3000"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
@@ -120,8 +122,8 @@ Nè [emb exp="f.name"], là cách ta hay Hùng ca? Ngươi thấy sao mới đư
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[glink  color="blue"  storage="scene3.ks"  size="40"  text="Sa&nbsp;Tướng&nbsp;quân&nbsp;nói&nbsp;đúng."  x="330"  y="293"  width=""  height=""  _clickable_img=""  target="*Sa"  ]
-[glink  color="blue"  storage="scene3.ks"  size="40"  text="Hùng&nbsp;ca&nbsp;nghe&nbsp;rất&nbsp;đáng&nbsp;yêu."  x="320"  y="471"  width=""  height=""  _clickable_img=""  target="*Hung"  ]
+[glink  color="blue"  storage="scene3.ks"  size="40"  text="Sa&nbsp;Tướng&nbsp;quân&nbsp;nói&nbsp;đúng."  x="337"  y="420"  width=""  height=""  _clickable_img=""  target="*Sa"  ]
+[glink  color="blue"  storage="scene3.ks"  size="40"  text="Hùng&nbsp;ca&nbsp;nghe&nbsp;rất&nbsp;đáng&nbsp;yêu."  x="319"  y="565"  width=""  height=""  _clickable_img=""  target="*Hung"  ]
 [s  ]
 *Sa
 
@@ -238,6 +240,7 @@ Mọi chuyện đều tuân theo ý người...[p]
 [chara_hide_all  time="1000"  wait="true"  ]
 [tb_show_message_window  ]
 [font  size="40"  color="0xffffff"  face="Arial"  ]
+[stopbgm  time="1000"  ]
 [quake  time="400"  count="3"  hmax="10"  wait="true"  ]
 [bg  time="1000"  method="crossfade"  storage="background/throne_room_fade.jpg"  ]
 [tb_start_text mode=1 ]
@@ -271,5 +274,5 @@ Bạn bất tỉnh nhân sự trước khi kịp hiểu chuyện gì đã xảy 
 #
 [_tb_end_text]
 
-[jump  storage="scene3.ks"  target=""  ]
+[jump  storage="scene4.ks"  target=""  ]
 [s  ]
