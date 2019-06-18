@@ -163,5 +163,5 @@ Bạn miễn cưỡng theo Tướng quân vào trong, lo lắng về số phận
 
 [tb_hide_message_window  ]
 [wait  time="3000"  ]
-[jump  storage="scene4.ks"  target=""  ]
+[jump  storage="scene3.ks"  target=""  ]
 [s  ]
